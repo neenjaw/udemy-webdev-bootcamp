@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+</head>
+<body>
+  <h1>Register</h1>
+
+  <form>
+    <div>
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="first-name" placeholder="John" required>
+
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="last-name" placeholder="Smith" required>
+    </div>
+
+    <div>
+      <label for="gender-male">Male</label>
+      <input type="radio" id="gender-male" name="gender" required>
+      <label for="gender-female">Female</label>
+      <input type="radio" id="gender-female" name="gender">
+      <label for="gender-other">Other</label>
+      <input type="radio" id="gender-other" name="gender">
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" pattern=".{6,12}" title="Password must contain between 6 and 12 characters" required>
+    </div>
+
+    <div>
+      <label>
+        Birthday:
+        <select id="date-month" name="month" required>
+          <option selected disabled>Month</option>
+          <option value="1">Jan</option>
+          <option value="2">Feb</option>
+          <option value="3">Mar</option>
+        </select>
+        <select id="date-day" name="day" required>
+          <option selected disabled>Day</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <select id="date-year" name="year" required>
+          <option selected disabled>Year</option>
+          <option value="1992">1992</option>
+          <option value="1993">1993</option>
+          <option value="1994">1994</option>
+        </select>
+      </label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="agree" name="agree" required>
+      <label for="agree">I agree to the terms and conditions</label>
+    </div>
+
+    <button>Submit</button>
+
+  </form>
+</body>
+</html>
