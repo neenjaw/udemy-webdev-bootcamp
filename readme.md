@@ -12,12 +12,16 @@ Basic HTML element usage example.
 
 ### s3-a2
 
-More basic HTML element usage with <img> and <a> tags
+More basic HTML element usage with <img> and <a> tags.
 
 ### s4-a1
 
-HTML table example
+HTML table example.
 
 ### s4-a2
 
-HTML form example with basic HTML5 validation rules
+HTML form example with basic HTML5 validation rules.
+
+### s5-a1
+
+CSS selector practice.
