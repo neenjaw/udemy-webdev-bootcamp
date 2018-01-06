@@ -1,0 +1,59 @@
+/* font-family */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: Georgia;
+}
+
+/* font-size */
+
+body {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 5.0em;
+}
+
+em {
+  font-size: 2.0em;
+}
+
+p {
+  font-size: 2.0em;
+}
+
+/* font-weight */
+
+p {
+  font-weight: normal;
+}
+
+/* line-height */
+
+p {
+  line-height: 1.5;
+}
+
+/* text-align */
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+/* text-decoration */
+
+em {
+  text-decoration: underline;
+}
+
+strong {
+  text-decoration: line-through;
+}
