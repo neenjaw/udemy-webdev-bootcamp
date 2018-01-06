@@ -46,4 +46,4 @@ CSS Code Along -- Image Gallery
 
 #### a3
 
-Simple CSS Styled Blog
+CSS Blog Posts
