@@ -1,0 +1,48 @@
+/* Blog Styles */
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  border: 20px solid #bdc3c7;
+  width: 80%;
+  min-width: 550px;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h2 {
+  color: #2c3e50;
+  font-size: 2.0rem;
+}
+
+.date {
+  color: #3498db;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.callout {
+  border-left: 5px solid #bdc3c7;
+  padding-left: 5px;
+  font-size: 0.9em;
+}
+
+hr {
+  width: 80%;
+  height: 0;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 20px auto 20px auto;
+}
+
+p:first-child {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+p:last-child {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}

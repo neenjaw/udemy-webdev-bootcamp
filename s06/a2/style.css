@@ -14,4 +14,5 @@ h1 {
   width: 30%;
   padding-bottom: 20px;
   border-bottom: 2px solid #f1f1f1;
+  text-transform: uppercase;
 }

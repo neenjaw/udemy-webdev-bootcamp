@@ -43,3 +43,7 @@ CSS Tic Tac Toe -- using a table
 #### a2
 
 CSS Code Along -- Image Gallery
+
+#### a3
+
+Simple CSS Styled Blog
