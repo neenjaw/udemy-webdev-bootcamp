@@ -1,0 +1,65 @@
+/* Tic Tac Toe */
+
+.tictactoe {
+  border-collapse: collapse;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.tictactoe td {
+  height: 100px;
+  width: 100px;
+  border-width: 0px;
+  border-color: black;
+  border-style: solid;
+  margin: 0px;
+  padding: 0px;
+}
+
+.tictactoe tr:nth-of-type(1) td {
+  border-width: 0px 0px 2px 0px;
+}
+
+.tictactoe tr:nth-of-type(3) td {
+  border-width: 2px 0px 0px 0px;
+}
+
+.tictactoe tr td:nth-of-type(2) {
+  border-left-width: 2px;
+  border-right-width: 2px;
+}
+
+/* Alternate Tic Tac Toe */
+
+.alt-tictactoe {
+  border-collapse: collapse;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.alt-tictactoe td {
+  height: 100px;
+  width: 100px;
+  border-width: 0px;
+  border-color: black;
+  border-style: solid;
+  margin: 0px;
+  padding: 0px;
+}
+
+.alt-tictactoe .vertical {
+  border-left-width: 2px;
+  border-right-width: 2px;
+}
+
+.alt-tictactoe .horizontal {
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+}
+
+/* Other Style Rules */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}

@@ -6,26 +6,40 @@ Organized by unit, assignment in that unit.
 
 ## Contents:
 
-### s03-a1
+### s03
+
+#### a1
 
 Basic HTML element usage example.
 
-### s03-a2
+#### a2
 
 More basic HTML element usage with <img> and <a> tags.
 
-### s04-a1
+### s04
+
+#### a1
 
 HTML table example.
 
-### s04-a2
+#### a2
 
 HTML form example with basic HTML5 validation rules.
 
-### s05-a1
+### s05
+
+#### a1
 
 CSS selector practice.
 
 ### s06
 
 CSS Font practice.
+
+#### a1
+
+CSS Tic Tac Toe -- using a table
+
+#### a2
+
+CSS Code Along -- Image Gallery
