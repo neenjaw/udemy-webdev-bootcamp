@@ -37,4 +37,13 @@ Bootstrap Integration.
 
 ### s08
 
-Javascript.
+Intro to Javascript.
+
+- a1: externalized JS, basic prompt, log usage
+- a2: externalized JS, basic variable math, Math class use
+
+### s09
+
+More Javascript
+
+- a1:
