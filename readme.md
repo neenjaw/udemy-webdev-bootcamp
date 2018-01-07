@@ -31,3 +31,10 @@ CSS Font/tyling practice.
 ### s07
 
 Bootstrap Integration.
+
+- a1: Bootstrap Image Gallery
+- a2: Bootstrap Splash Page
+
+### s08
+
+Javascript.
