@@ -1,0 +1,77 @@
+html {
+  height: 100%
+}
+
+body {
+  font-family: 'Open sans', sans-serif;
+  background-color: rgb(38, 38, 38);
+  color: white;
+  padding: 0px;
+  margin: 0px;
+}
+
+.top-bar {
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgb(70, 125, 218);
+  padding: 10px;
+  margin: 0;
+}
+
+.top-bar h1 {
+  font-size: 4.0em;
+  margin: 5px;
+  padding: 0px;
+}
+
+.top-bar h2 {
+  font-size: 3.0em;
+  margin: 5px;
+  padding: 0px;
+}
+
+.mid-bar {
+  min-height: 15px;
+  background-color: white;
+  color: rgb(70, 125, 218);
+}
+
+.mid-bar p {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#new-game {
+  margin: 0px auto 0px 0px;
+}
+#message {
+  color: black;
+  text-transform: none;
+  font-weight: 400;
+  margin: 0px auto;
+}
+#difficulty-easy {
+  margin: 0px 2px 0px auto;
+}
+#difficulty-hard {
+  margin: 0px 0px 0px 2px;
+}
+
+.game {
+  max-width: 610px;
+  margin: 0px auto;
+  padding-top: 15px;
+}
+
+.square {
+  width: 30%;
+  background-color: purple;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.5%;
+  border: 1px solid rgb(26,26,26);
+  border-radius: 8px;
+}

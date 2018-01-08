@@ -85,4 +85,4 @@ DOM Events
 
 ### s15
 
-- color-game:
+- color-game: color guessing game
