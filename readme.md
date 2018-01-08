@@ -74,3 +74,12 @@ Javascript: Objects
 Intro DOM
 
 - dom: dom practice boilerplate
+
+### s14
+
+DOM Events
+
+- color-toggle: intro to event listening on a button and interacting with styles
+- scorekeeper: score keeper applet, modular style, customizable settings parameter
+- todo-revisit:
+- counting:
