@@ -46,4 +46,9 @@ Intro to Javascript.
 
 More Javascript
 
-- a1:
+- annoy-o-matic: while loop until condition met
+- loop-practice: for loops iterating through various number sequences
+
+### s10
+
+Javascript Functions
