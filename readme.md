@@ -52,3 +52,9 @@ More Javascript
 ### s10
 
 Javascript Functions
+
+- function-boilerplate: a few funcions.
+
+### s11
+
+Javascript: Arrays
