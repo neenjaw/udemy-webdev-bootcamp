@@ -82,3 +82,7 @@ DOM Events
 - color-toggle: intro to event listening on a button and interacting with styles
 - scorekeeper: score keeper applet, modular style, customizable settings parameter
 - todo-revisit: adding events on mouseover, mouseout, click
+
+### s15
+
+- color-game:
