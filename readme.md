@@ -58,3 +58,6 @@ Javascript Functions
 ### s11
 
 Javascript: Arrays
+
+- todo: a todo list lite application, coded in module js style
+- problem: a few array functions, written in modular js style, adds array prototype fn
