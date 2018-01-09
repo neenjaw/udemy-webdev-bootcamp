@@ -33,31 +33,56 @@ body {
 }
 
 .mid-bar {
+  text-align: center;
   min-height: 15px;
   background-color: white;
   color: rgb(70, 125, 218);
+  border-bottom: 1px solid #bcbcbc;
 }
 
-.mid-bar p {
-  display: inline-block;
+.mid-bar div {
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mid-bar ul {
+  padding: 0;
+  margin: 0;
+  list-style-type:none;
+}
+
+.mid-bar ul li {
+  display:inline-block;
+  padding: 5px;
+  margin: 0;
   text-transform: uppercase;
   font-weight: 700;
+  user-select: none;
+  -moz-user-select: none;
 }
 
-#new-game {
-  margin: 0px auto 0px 0px;
+.mid-bar .left {
+  float: left;
 }
+
+.mid-bar .right {
+  float: right;
+}
+
+.mid-bar li:hover {
+  cursor:pointer;
+  color: white;
+  background-color: rgb(58, 105, 185);
+}
+
 #message {
+  display: inline-block;
   color: black;
   text-transform: none;
   font-weight: 400;
-  margin: 0px auto;
-}
-#difficulty-easy {
-  margin: 0px 2px 0px auto;
-}
-#difficulty-hard {
-  margin: 0px 0px 0px 2px;
+  margin: 0px;
+  padding: 5px;
 }
 
 .game {
@@ -71,7 +96,12 @@ body {
   background-color: purple;
   padding-bottom: 30%;
   float: left;
-  margin: 1.5%;
-  border: 1px solid rgb(26,26,26);
+  margin: 1.6%;
   border-radius: 8px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.selected-difficulty {
+  color: white;
+  background-color: rgb(70, 125, 218);
 }
