@@ -66,14 +66,18 @@ body {
 }
 
 button {
+  height: 100%;
+
   border: none;
   background: none;
-  text-transform: uppercase;
-  height: 100%;
-  font-weight: 700;
   color: rgb(70, 125, 218);
-  letter-spacing: 1px;
+  
+  font-weight: 700;
   font-size: inherit;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  transition: all 0.3s cubic-bezier(.86,0,.07,1);
 }
 
 button:hover {

@@ -103,7 +103,7 @@ let ColorGame = (function(){
    */
   function reset() {
     document.querySelector(".top-bar").style.backgroundColor = settings.pageColors.top;
-    document.getElementById(settings.newGameBtnId).textContent = "New Game";
+    document.getElementById(settings.newGameBtnId).textContent = "New Colors";
   }
 
   /**
@@ -139,7 +139,7 @@ let ColorGame = (function(){
   function winGame() {
     isWon = true;
 
-    displayMessage("Win!");
+    displayMessage("Correct!");
 
     //change the top bar's backgroundColor to the rgbPicked value
     document.querySelector(".top-bar").style.backgroundColor = rgbPicked;
@@ -262,7 +262,6 @@ let ColorGame = (function(){
     reset();
     displayPicked();
     colorSquares();
-    displayMessage('New Game Started');
 
     if (settings.debug) console.log("New Game Started");
   }
