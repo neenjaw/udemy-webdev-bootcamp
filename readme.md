@@ -92,6 +92,6 @@ DOM Events
 - Features: modular JS style, flexible initialization settings.
 - Notes: learned a lot about block vs inline alignment, css selector specificity, DOM manipulation without libraries like jQuery.
 
-### s16
+### s17
 
 - jQuery
