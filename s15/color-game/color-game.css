@@ -12,12 +12,11 @@ body {
 
 .top-bar {
   margin: 0;
-  padding: 10px;
+  padding: 20px;
 
   background-color: rgb(70, 125, 218);
 
   color: white;
-  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
 
@@ -25,18 +24,22 @@ body {
 }
 
 .top-bar h1 {
-  margin: 5px;
+  margin: 0px;
   padding: 0px;
 
   font-size: 4.0em;
+  font-weight: normal;
+  line-height: 1.1;
   text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
 }
 
 .top-bar h2 {
-  margin: 5px;
+  margin: 0px;
   padding: 0px;
 
-  font-size: 2.5em;
+  font-size: 2.0em;
+  font-weight: normal;
+  line-height: 1.1;
   text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
 }
 
@@ -45,7 +48,7 @@ body {
   background-color: white;
 
   text-align: center;
-  color: rgb(70, 125, 218);
+  color: black;
 }
 
 .mid-bar div {
@@ -54,46 +57,28 @@ body {
   margin-right: auto;
 }
 
-.mid-bar ul {
-  padding: 0;
-  margin: 0;
-
-  list-style-type:none;
-}
-
-.mid-bar ul li {
-  display:inline-block;
-  padding: 5px;
-  margin: 0;
-
-  font-weight: 700;
-  text-transform: uppercase;
-  user-select: none;
-  -moz-user-select: none;
-}
-
-.mid-bar .left {
-  float: left;
-}
-
-.mid-bar .right {
-  float: right;
-}
-
-.mid-bar li:hover {
-  cursor:pointer;
-  color: white;
-  background-color: rgb(58, 105, 185);
-}
-
 #message {
   display: inline-block;
-  margin: 0px;
-  padding: 5px;
+  width: 20%;
+  min-width: 200px;
+  font-size: 0.8em;
+  font-weight: 700;
+}
 
-  font-weight: 400;
-  color: black;
-  text-transform: none;
+button {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  height: 100%;
+  font-weight: 700;
+  color: rgb(70, 125, 218);
+  letter-spacing: 1px;
+  font-size: inherit;
+}
+
+button:hover {
+  background-color: rgb(70, 125, 218);
+  color: white;
 }
 
 .game {
