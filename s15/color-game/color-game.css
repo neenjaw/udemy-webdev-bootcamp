@@ -11,33 +11,41 @@ body {
 }
 
 .top-bar {
-  font-weight: 700;
+  margin: 0;
+  padding: 10px;
+
+  background-color: rgb(70, 125, 218);
+
+  color: white;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-  color: white;
-  background-color: rgb(70, 125, 218);
-  padding: 10px;
-  margin: 0;
+
+  transition: background-color 0.5s ease-in-out;
 }
 
 .top-bar h1 {
-  font-size: 4.0em;
   margin: 5px;
   padding: 0px;
+
+  font-size: 4.0em;
+  text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
 }
 
 .top-bar h2 {
-  font-size: 3.0em;
   margin: 5px;
   padding: 0px;
+
+  font-size: 2.5em;
+  text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
 }
 
 .mid-bar {
-  text-align: center;
   min-height: 15px;
   background-color: white;
+
+  text-align: center;
   color: rgb(70, 125, 218);
-  border-bottom: 1px solid #bcbcbc;
 }
 
 .mid-bar div {
@@ -49,6 +57,7 @@ body {
 .mid-bar ul {
   padding: 0;
   margin: 0;
+
   list-style-type:none;
 }
 
@@ -56,8 +65,9 @@ body {
   display:inline-block;
   padding: 5px;
   margin: 0;
-  text-transform: uppercase;
+
   font-weight: 700;
+  text-transform: uppercase;
   user-select: none;
   -moz-user-select: none;
 }
@@ -78,11 +88,12 @@ body {
 
 #message {
   display: inline-block;
-  color: black;
-  text-transform: none;
-  font-weight: 400;
   margin: 0px;
   padding: 5px;
+
+  font-weight: 400;
+  color: black;
+  text-transform: none;
 }
 
 .game {
@@ -92,16 +103,19 @@ body {
 }
 
 .square {
-  width: 30%;
-  background-color: purple;
-  padding-bottom: 30%;
   float: left;
+
+  width: 30%;
   margin: 1.6%;
+  padding-bottom: 30%;
+
+  background-color: rgb(38, 38, 38);
   border-radius: 8px;
+
   transition: background-color 0.5s ease-in-out;
 }
 
 .selected-difficulty {
-  color: white;
   background-color: rgb(70, 125, 218);
+  color: white;
 }
