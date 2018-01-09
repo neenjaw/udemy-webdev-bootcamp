@@ -94,4 +94,4 @@ DOM Events
 
 ### s17
 
-- jQuery
+#### jQuery Todo List: Now recreating the todo list with the jQuery library

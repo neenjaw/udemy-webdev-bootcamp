@@ -1,0 +1,28 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+
+  font-family: 'Roboto', sans-serif;
+
+
+}
+
+#todo-container {
+  width: 360px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #bbbbbb;
+
+}
+
+.task-complete {
+  color: #8a8a8a;
+  text-decoration: line-through;
+}
