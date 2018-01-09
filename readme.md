@@ -91,3 +91,7 @@ DOM Events
 - How to play: click a square, if it matches the rgb code at the top, you win!
 - Features: modular JS style, flexible initialization settings.
 - Notes: learned a lot about block vs inline alignment, css selector specificity, DOM manipulation without libraries like jQuery.
+
+### s16
+
+- jQuery
