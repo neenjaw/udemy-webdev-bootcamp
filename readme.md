@@ -95,3 +95,5 @@ DOM Events
 ### s17
 
 #### jQuery Todo List: Now recreating the todo list with the jQuery library
+
+- Features: Modular JS style, css3 transitions, jQuery event listeners could be modified to work with backend data-structure.

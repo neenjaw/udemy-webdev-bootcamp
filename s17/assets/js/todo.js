@@ -8,7 +8,7 @@ let TodoList = (function(){
   }
 
   function makeTodoItemElement(todoItem) {
-    let $element = $(`<li data-task-id="${todoItem.id}"><span>X</span> ${todoItem.task}</li>`);
+    let $element = $(`<li data-task-id="${todoItem.id}"><span><i class="fas fa-times-circle"></i></span> ${todoItem.task}</li>`);
 
     return $element;
   }
@@ -69,9 +69,13 @@ let TodoList = (function(){
 
     $(`#${settings.ids.todoList}`).on("click", "span", function(e){
       removeTodo($(this).closest("li").data("taskId"));
-      
+
       //stop the event from bubbling up
       e.stopPropagation();
+    });
+
+    $(`.${settings.classes.plus}`).click(function() {
+      $(`#${settings.ids.inputNewTodo}`).fadeToggle();
     });
   }
 
@@ -86,6 +90,7 @@ let TodoList = (function(){
     settings.ids.inputNewTodo = settings.ids.inputNewTodo || 'input-new-todo';
 
     settings.classes = settings.classes || {};
+    settings.classes.plus = settings.classes.plus || "fa-plus-square";
     settings.classes.taskComplete = settings.classes.taskComplete || "task-complete";
 
     settings.debug = settings.debug  || true;
