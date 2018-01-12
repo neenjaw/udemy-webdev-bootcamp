@@ -1,10 +1,59 @@
-// Create a Paper.js Path to draw a line into it:
-var path = new Path();
-// Give the stroke a color
-path.strokeColor = 'white';
-var start = new Point(100, 100);
-// Move to start and draw a line from there
-path.moveTo(start);
-// Note the plus operator on Point objects.
-// PaperScript does that for us, and much more!
-path.lineTo(start + [ 100, -50 ]);
+var keyData = (function (){
+  var soundDir = "assets/sounds/";
+  var sounds = [ 'bubbles.mp3', 'clay.mp3', 'confetti.mp3', 'corona.mp3', 'dotted-spiral.mp3', 'flash-1.mp3', 'flash-2.mp3', 'flash-3.mp3', 'glimmer.mp3', 'moon.mp3', 'pinwheel.mp3', 'piston-1.mp3', 'piston-2.mp3', 'piston-3.mp3', 'prism-1.mp3', 'prism-2.mp3', 'prism-3.mp3', 'splits.mp3', 'squiggle.mp3', 'strike.mp3', 'suspension.mp3', 'timer.mp3', 'ufo.mp3', 'veil.mp3', 'wipe.mp3', 'zig-zag.mp3' ];
+  var keys = ['a', 'b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+  var result = {};
+
+  function randomColor() {
+    return new Color(Math.random(), Math.random(), Math.random());
+  }
+
+  function getHowl(sound) {
+    var source = soundDir + sound;
+    return new Howl({
+      src: [source]
+    });
+  }
+
+  function keyValue(sound) {
+    var c = randomColor();
+    var h = getHowl(sound);
+
+    return { color: c, sound: h };
+  }
+
+  for (var i = 0; i < keys.length; i++) {
+    result[keys[i]] = keyValue(sounds[i]);
+  }
+
+  return result;
+}());
+
+var circles = [];
+
+function onKeyDown(event) {
+  if (event.key in keyData) {
+    keyData[event.key].sound.play();
+
+    var maxPoint = new Point(view.size.width, view.size.height);
+  	var randomPoint = Point.random();
+
+    var point = maxPoint * randomPoint;
+
+    var circle = new Path.Circle(point, 200);
+    circle.fillColor = keyData[event.key].color;
+    circles.push(circle);
+  }
+}
+
+function onFrame(event) {
+  for (var i = 0; i < circles.length; i++) {
+    circles[i].scale(0.8);
+    if (circles[i].area < 1) {
+      circles[i].remove();
+      circles.splice(i, 1);
+      i--;
+    }
+    // console.log(circles[i].area);
+  }
+}
