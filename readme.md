@@ -92,8 +92,12 @@ DOM Events
 - Features: modular JS style, flexible initialization settings.
 - Notes: learned a lot about block vs inline alignment, css selector specificity, DOM manipulation without libraries like jQuery.
 
-### s17
+### s18
 
 #### jQuery Todo List: Now recreating the todo list with the jQuery library
 
 - Features: Modular JS style, css3 transitions, jQuery event listeners could be modified to work with backend data-structure.
+
+### Patatap
+
+#### Patatap clone built with Paper.js, howler.js
