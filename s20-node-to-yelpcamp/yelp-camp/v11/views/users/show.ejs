@@ -1,0 +1,64 @@
+<% include ../partials/header %>
+
+<% include ../partials/nav %>
+
+<div class="container">
+    <% include ../partials/flash %>
+    <div class="profile-title">
+        <div>
+            <h2 class="mb-1"><%= profileUser.name %>'s profile:</h2>
+            <p class="text-muted"><small>Member for <%= moment(profileUser.created).fromNow(true) %>.</small></p>
+        </div>
+        <div>
+            <% if (profileUser.id.equals(user.id) || user.isAdmin) { %>
+            <a class="btn btn-sm btn-outline-warning" href="/users/<%= profileUser.id %>/edit"><i class="far fa-edit user-edit"></i> Edit profile</a>
+            <% } %>
+        </div>
+    </div>
+</div>
+
+<div class="container mb-3">
+    <h4><%= profileUser.name %>'s campgrounds:</h4>
+
+    <% if (profileUser.campgrounds.length !== 0) { %>
+    <div class="list-group user-campgrounds">
+        <% profileUser.campgrounds.forEach(campground => { %>
+        <a href="/campgrounds/<%= campground.id %>" class="list-group-item list-group-item-action user-campground">
+            <div>
+                <div class="thumbnail mr-3">
+                    <img src="<%= campground.image %>" alt="Campground Image">
+                </div>
+            </div>
+            <div class="user-campground-text">
+                <div>
+                    <h5><%= campground.name %></h5>
+                    <small><%= moment(campground.created).fromNow() %></small>
+                </div>
+                <p class="mb-1"><%= campground.description.split(' ').slice(0, 20).join(' ') %>...</p>
+            </div>
+        </a>
+        <% }); %>
+    </div>
+    <% } else { %>
+    <p>No campgrounds to show, <%= profileUser.name %> needs to go camping!</p>
+    <% } %>
+</div>
+
+<div class="container">
+    <h4><%= profileUser.name %>'s comments:</h4>
+
+    <% if (profileUser.comments.length !== 0) { %>
+    <div class="list-group user-comments">
+        <% profileUser.comments.forEach(comment => { %>
+        <a href="/campgrounds/<%= comment.campground %>" class="list-group-item list-group-item-action flex-column align-items-start">
+            <small>Posted <%= moment(comment.created).fromNow() %><% if (comment.updated) { %>, last updated <%= moment(comment.updated).fromNow() %><% } %></small>
+            <p class="mb-1"><%= comment.text %></p>
+        </a>
+        <% }); %>
+    </div>
+    <% } else { %>
+    <p>No comments to show, <%= profileUser.name %> needs more to say!</p>
+    <% } %>
+</div>
+
+<% include ../partials/footer %>

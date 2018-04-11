@@ -1,0 +1,21 @@
+<% include partials/header %>
+
+<% include partials/nav %>
+
+<div class="container">
+  <% if (campground) { %>
+    <header>
+      <h4><%= campground.name %></h4>
+    </header>
+
+    <img src="<%= campground.image %>">
+    <p><%= campground.description %></p>
+
+    <% campground.comments.forEach((comment) => { %>
+      <p><strong><%= comment.author %></strong> - <%= comment.text %></p>
+    <% }); %>
+  <% } %>
+</div>
+
+
+<% include partials/footer %>
